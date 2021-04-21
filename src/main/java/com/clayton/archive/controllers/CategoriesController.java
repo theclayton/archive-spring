@@ -45,7 +45,7 @@ public class CategoriesController {
 			List<Projects> projects = projectsRepo.findByCategoriesNameContaining(categoryName);
 			int projectsCount = projects.size();
 			
-			if (projectsCount <= 2) {
+			if (projectsCount <= 6) {
 				otherCount += projectsCount;
 				continue;
 			} else {
